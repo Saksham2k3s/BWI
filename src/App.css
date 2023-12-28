@@ -1,38 +1,249 @@
-.App {
+/*==================================================            Navbar            ==============================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.logout-btn button {
+  border: 2px solid #ff5200;
+  color: #ff5200;
+  padding: 5px;
+  background: transparent;
+}
+.mycartbtn,
+.mycartbtn:hover {
+  background-color: #ff5200;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 20px;
+}
+.mode img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .sm {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sm {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 300px) {
+  .sm {
+    font-size: 7px;
+  }
+}
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+/*===================================================== Cart Component =====================================*/
+
+.cart-quantity {
+  position: relative;
+  background-color: red;
+  color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.cart {
+  height: 100vh;
+}
+
+.cart-options {
+  height: 400px;
+  padding: 10px;
+  border: 2px solid #ff5200;
+  border-radius: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cart-item {
+  list-style: none;
+}
+.cart-img {
+  height: 100px;
+  width: 100px;
+}
+.my-cart-container {
+  height: 100vh;
+}
+.increase,
+.decrease {
+  font-size: 22px;
+  background-color: #ffdd3b;
+  color: black;
+  border-radius: 5px;
+  padding: 1px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.quantity-number {
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff5200;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.removebtn {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+}
+.removebtn:hover {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+}
+.cart-btn {
+  background-color: #ffdd3b;
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .removebtn {
+    font-size: 10px;
+    border: 2px solid red;
+    border-radius: 3px;
+    color: red;
+  }
+  .cart-img {
+    height: 50px;
+    width: 50px;
+  }
+  .increase,
+  .decrease {
+    font-size: 5px;
+    background-color: #ffdd3b;
+    color: black;
+    border-radius: 5px;
+    padding: 1px 4px;
+    cursor: pointer;
+    font-weight: normal;
+  }
+  .quantity-number {
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 5px;
+  }
+  .item-price,
+  .total-price {
+    font-size: 10px;
+  }
+}
+
+/*==================================================== Login Component ===========================================*/
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  border: 2px solid #ff5200;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.login-box h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff5200;
+}
+
+.login-box input {
+  background-color: #ff51002a;
+  border: none;
+  color: #ff5200;
+}
+
+.login-btn {
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-box button {
+  background-color: #ff5200;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-box button:hover {
+  background-color: transparent;
+  border: 3px solid #ff5200;
 }
 
-.App-header {
-  background-color: #282c34;
+.eye-icon {
+  padding: 6px;
+  font-size: 20px;
+  color: #ff5200;
+  cursor: pointer;
+}
+
+.form-input {
+  border: 3px solid #ff5200;
+  border-radius: 10px;
+}
+
+/*====================================================== Home Component ==========================================*/
+
+.home {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+  padding: 10px 50px;
+  color: #ff5200;
+  border: 3px solid #ff5200;
+  background: transparent;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  background-color: transparent;
+  height: 250px;
+}
+
+.card img {
+  height: 200px;
+}
+
+/* ProductCard */
+.staricon {
+  font-size: 17px;
+  color: #ffdd3b;
 }
